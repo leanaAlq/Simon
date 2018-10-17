@@ -1,0 +1,122 @@
+body {
+  font-family: "VT323", monospace;
+  /* background-image: url("brain.png"); */
+  background-repeat: no-repeat;
+  background-position: 250px 200px;
+  margin: 10px;
+  background-size: 450px;
+}
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.brain {
+  display: flex;
+  position: relative;
+  bottom: 450px;
+  left: 70px;
+  width: 504px;
+  height: 504px;
+}
+img {
+  position: absolute;
+  width: 504px;
+  height: 504px;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 100px;
+}
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+}
+.outer-circle {
+  top: 30px;
+  left: 800px;
+  height: 30rem;
+  width: 30rem;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  position: relative;
+  border: 0.25rem solid #222;
+}
+.inner-circle {
+  height: 10rem;
+  width: 10rem;
+
+  justify-content: center;
+  justify-self: center;
+  position: absolute;
+  display: flex;
+  top: 7rem;
+  left: 7rem;
+  z-index: 1;
+  margin: 2.5rem;
+  background-color: gainsboro;
+  border: 0.25rem solid #222;
+}
+.round {
+  border-radius: 100%;
+}
+.corner {
+  height: 15rem;
+  width: 15rem;
+  float: left;
+  opacity: 0.2;
+}
+.red {
+  background-color: #ff0038;
+  border-top-left-radius: 100%;
+  position: relative;
+}
+.green {
+  background-color: #020509;
+  border-top-right-radius: 100%;
+  position: relative;
+}
+.blue {
+  background-color: #00cffa;
+  border-bottom-left-radius: 100%;
+  position: relative;
+}
+.yellow {
+  background-color: #ffce38;
+  border-bottom-right-radius: 100%;
+  position: relative;
+}
+.start {
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  background: none;
+  border: hidden;
+  border-radius: 100%;
+  position: relative;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.announce {
+  position: absolute;
+  top: 270px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  margin-top: 170px;
+  margin-left: 75px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  /* background-image: url("https://ubisafe.org/images1280_/transparent-watercolor-pale-pink-5.png"); */
+  background-repeat: no-repeat;
+  /* background: rgba(216, 191, 216, 0.562); */
+  background-size: 440px 140px;
+  border: hidden;
+
+  padding: 20px;
+}

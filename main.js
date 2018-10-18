@@ -200,7 +200,15 @@ $(document).ready(function() {
       $("img").show("slow");
       $("img").addClass("animated rotateOut");
       $(".announce h2").text("Brilliant!");
+      $(".announce").css("background-color", "#00cffa");
       $(".announce").show();
+      $(".announce").animate({
+        left: "380px",
+        top: "200px",
+        width: "400px",
+        height: "100px",
+        opacity: 1
+      });
       $(".again").click(function() {
         location.reload();
       });

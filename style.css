@@ -101,9 +101,22 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.again {
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  right: 150px;
+  background: none;
+  border: hidden;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+
+  justify-content: center;
+}
 .announce {
   position: absolute;
   top: 270px;
+  /* left: 50px; */
   width: 0;
   height: 0;
   z-index: 100;

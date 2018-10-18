@@ -75,31 +75,9 @@ $(document).ready(function() {
                                   { opacity: 3 },
                                   speed,
                                   function() {
-                                    $("#" + flashArray[5]).animate(
-                                      { opacity: 0.2 },
-                                      function() {
-                                        $("#" + flashArray[6]).animate(
-                                          { opacity: 3 },
-                                          speed,
-                                          function() {
-                                            $("#" + flashArray[6]).animate(
-                                              { opacity: 0.2 },
-                                              function() {
-                                                $("#" + flashArray[7]).animate(
-                                                  { opacity: 3 },
-                                                  speed,
-                                                  function() {
-                                                    $(
-                                                      "#" + flashArray[7]
-                                                    ).animate({ opacity: 0.2 });
-                                                  }
-                                                );
-                                              }
-                                            );
-                                          }
-                                        );
-                                      }
-                                    );
+                                    $("#" + flashArray[5]).animate({
+                                      opacity: 0.2
+                                    });
                                   }
                                 );
                               }
@@ -145,7 +123,19 @@ $(document).ready(function() {
       }
     } else {
       result = 0;
-      console.log(0);
+      $(".announce h2").text("Try Again!");
+      $(".announce").show();
+      $(".announce").css("background-color", "#ff0038");
+      $(".announce").animate({
+        left: "380px",
+        top: "200px",
+        width: "400px",
+        height: "100px",
+        opacity: 1
+      });
+      $(".again").click(function() {
+        location.reload();
+      });
     }
   }
 
@@ -180,35 +170,40 @@ $(document).ready(function() {
       $("img").attr("src", "brain2.png");
       $("img").show("slow");
       $(".start").one("click", function() {
-        flashArray = winSenario(8);
+        flashArray = winSenario(6);
         console.log("flash array 2: " + flashArray);
         setTimeout(flashItLevelthree(flashArray, 600), 30000);
-        userClicks(8, 3);
+        userClicks(6, 3);
       });
       // $("body").css("background-image", "url(brain1.png)");
     }
   }
   function changeButtonLevel3(score, n) {
-    if (score === 1 && n === 8) {
+    if (score === 1 && n === 6) {
       $(".start").text("Level 4!");
       $("img").hide();
       $("img").attr("src", "brain3.png");
       $("img").show("slow");
       $(".start").one("click", function() {
-        flashArray = winSenario(8);
+        flashArray = winSenario(6);
         console.log("flash array 2: " + flashArray);
         setTimeout(flashItLevelthree(flashArray, 300), 30000);
-        userClicks(8, 4);
+        userClicks(6, 4);
       });
     }
   }
   function changeButtonLevel4(score, n) {
-    if (score === 1 && n === 8) {
+    if (score === 1 && n === 6) {
       $(".start").text("Level 4!");
       $("img").hide();
       $("img").attr("src", "brain4.png");
       $("img").show("slow");
       $("img").addClass("animated rotateOut");
+      $(".announce h2").text("Brilliant!");
+      $(".announce").show();
+      $(".again").click(function() {
+        location.reload();
+      });
     }
   }
 });

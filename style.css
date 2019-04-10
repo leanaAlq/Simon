@@ -133,3 +133,34 @@ h2 {
 
   padding: 20px;
 }
+@media only screen and (max-width: 600px) {
+  img {
+    width: 204px;
+    height: 204px;
+  }
+  .outer-circle {
+    top: 30px;
+    left: 10%;
+    right: 10%;
+    height: 15rem;
+    width: 15rem;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    position: relative;
+  }
+  .corner {
+    height: 7.5rem;
+    width: 7.5rem;
+    float: left;
+    opacity: 0.2;
+  }
+  .inner-circle {
+    top: 2.5rem;
+    left: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .brain {
+    top: 60px;
+  }
+}

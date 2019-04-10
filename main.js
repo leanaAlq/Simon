@@ -127,9 +127,9 @@ $(document).ready(function() {
       $(".announce").show();
       $(".announce").css("background-color", "#ff0038");
       $(".announce").animate({
-        left: "380px",
+        left: "5%",
         top: "200px",
-        width: "400px",
+        width: "30%",
         height: "100px",
         opacity: 1
       });

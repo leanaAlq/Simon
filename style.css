@@ -142,25 +142,31 @@ h2 {
     top: 30px;
     left: 10%;
     right: 10%;
-    height: 15rem;
-    width: 15rem;
+    height: 14rem;
+    width: 14rem;
     background-color: whitesmoke;
-    padding: 0.5rem;
+    padding: 0.3rem;
     position: relative;
   }
   .corner {
-    height: 7.5rem;
-    width: 7.5rem;
+    height: 7rem;
+    width: 7rem;
     float: left;
     opacity: 0.2;
   }
   .inner-circle {
-    top: 2.5rem;
-    left: 2.5rem;
+    top: 2rem;
+    left: 2rem;
     height: 5rem;
     width: 5rem;
   }
   .brain {
     top: 60px;
+  }
+  h2.try {
+    display: none;
+  }
+  .again {
+    position: initial;
   }
 }
